@@ -1,0 +1,47 @@
+.wrapper_hero {
+    background: var(--main-color);
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero_leftcolumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 420px;
+}
+
+.hero_leftcolumn__text {
+    margin-bottom: 5px;
+}
+
+.hero_leftcolumn__skills {
+    margin-bottom: 50px;
+}
+
+.hero_rightcolumn img {
+    max-width: 634px;
+    width: 100%;
+    margin-bottom: -4px;
+}
+
+@media (max-width: 1000px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero_leftcolumn {
+        align-items: center;
+    }
+
+    .hero_rightcolumn img {
+        margin-top: 40px;
+        height: 335px;
+        object-fit: cover;
+        width: 100%
+    }
+}

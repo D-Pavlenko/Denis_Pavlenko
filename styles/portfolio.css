@@ -1,0 +1,126 @@
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+}
+
+.card {
+    background: #2a2a2a;
+    max-width: 1000px;
+    width: 100%;
+    padding: 20px 5px;
+    margin-bottom: 40px;
+    position: relative;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+    color: rgb(88 199 250 / 0%);
+    cursor: pointer;
+    font-family: cursive;
+    color: var(--white-color);
+}
+
+.card::before {
+    content: "";
+    width: 104%;
+    height: 102%;
+    border-radius: 15px;
+    background-image: linear-gradient(var(--rotate), #8dc32d, #009242 43%, #ffeb1c);
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -2%;
+    animation: spin 4.5s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        --rotate: 0deg;
+    }
+
+    100% {
+        --rotate: 360deg;
+    }
+}
+
+.swiper {
+    font-family: 'Poppins', sans-serif;
+    max-width: 950 px;
+    width: 100%;
+    margin: 0;
+}
+
+.slide_title {
+    text-transform: uppercase;
+}
+
+.portfolio-image {
+    max-width: 930px;
+    width: 100%;
+
+    border-radius: 15px;
+}
+
+.slide_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.slide_title {
+    text-transform: uppercase;
+}
+
+.slide_project,
+.slide_git {
+    text-decoration: none;
+    color: var(--white-color);
+    border-bottom: 1px solid transparent;
+}
+
+.slide_item {
+    margin-bottom: 20px;
+}
+
+.slide_project:hover,
+.slide_git:hover {
+    border-bottom: 2px solid var(--text-selection-color);
+}
+
+.slide_item i {
+    font-family: fontawesome;
+    font-style: normal;
+    margin-right: 5px;
+}
+
+.hero-items-slider-btn {
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.slider-btn-next,
+.slider-btn-prev {
+    background-color: transparent;
+    border: none;
+    color: #8dc32d;
+}
+
+
+.slider-btn-next:hover,
+.slider-btn-prev:hover {
+    box-shadow: 0 10px 10px -10px #ffeb1c;
+    color: #ffeb1c;
+}
