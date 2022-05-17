@@ -16,8 +16,8 @@
     background: #2a2a2a;
     max-width: 1000px;
     width: 100%;
-    padding: 20px 5px;
-    margin-bottom: 40px;
+    padding: 8px 5px;
+    margin-bottom: 15px;
     position: relative;
     border-radius: 15px;
     justify-content: center;
@@ -67,9 +67,8 @@
 }
 
 .portfolio-image {
-    max-width: 930px;
+    max-width: 880px;
     width: 100%;
-
     border-radius: 15px;
 }
 
@@ -80,6 +79,8 @@
 
 .slide_title {
     text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .slide_project,
@@ -87,10 +88,11 @@
     text-decoration: none;
     color: var(--white-color);
     border-bottom: 1px solid transparent;
+    transition: border 0.25s ease-out;
 }
 
 .slide_item {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .slide_project:hover,
@@ -116,6 +118,7 @@
     background-color: transparent;
     border: none;
     color: #8dc32d;
+    transition: color 0.75s ease-out;
 }
 
 

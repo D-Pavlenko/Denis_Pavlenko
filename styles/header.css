@@ -28,6 +28,7 @@ header {
 .header_menu__link {
     text-decoration: none;
     color: var(--white-color);
+    transition: border 0.25s ease-out;
 }
 
 .header_menu__item:hover {
@@ -108,7 +109,6 @@ header {
 .mobile_nav {
     position: fixed;
     z-index: 8;
-    display: none;
     flex-direction: column;
     justify-content: space-between;
     width: 320px;

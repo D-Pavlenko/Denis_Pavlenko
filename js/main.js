@@ -33,7 +33,7 @@ function toggleMobileNav() {
     body.classList.toggle('no-scroll');
 }
 
-
+//Swiper
 
 const swiper = new Swiper('.swiper', {
     slidesPerView: 1,
@@ -56,6 +56,14 @@ const swiper = new Swiper('.swiper', {
         sensitivity: 1,
     }
 });
+
+
+AOS.init({
+    disable: 'phone',
+    disable: 'tablet',
+    disable: 'mobile',
+});
+
 
 
 
