@@ -118,7 +118,6 @@
     background-color: transparent;
     border: none;
     color: #8dc32d;
-    transition: color 0.75s ease-out;
     cursor: pointer;
     transition: all .3s ease-in-out;
 }
