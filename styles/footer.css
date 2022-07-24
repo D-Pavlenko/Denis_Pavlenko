@@ -33,6 +33,7 @@
 .footer_nav__list-item a {
     text-decoration: none;
     color: var(--white-color);
+    transition: all .3s ease-in-out;
 }
 
 .footer_nav__list-item a:hover {
